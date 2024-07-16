@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Invoice Result</title>
+</head>
+<body>
+<h1>Invoice Created</h1>
+<p>Invoice Number: <span th:text="${invoice.invoiceNumber}"></span></p>
+<p>Invoice Conditions: <span th:text="${invoice.invoiceConditions}"></span></p>
+<p>User Name: <span th:text="${invoice.user.name}"></span></p>
+<p>User Last Name: <span th:text="${invoice.user.lastName}"></span></p>
+<p>User Identification: <span th:text="${invoice.user.identification}"></span></p>
+<p>Invoice Date: <span th:text="${invoice.invoiceDate}"></span></p>
+<p>Invoice Amount: <span th:text="${invoice.invoiceAmount}"></span></p>
+<p>Status: <span th:text="${invoice.status}"></span></p>
+</body>
+</html>
